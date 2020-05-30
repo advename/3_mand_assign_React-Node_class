@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0px;
+  box-sizing: border-box;
+  color: rgb(24, 24, 24);
+}
+
+#app {
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: white;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul,
+header li,
+header a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 1.3rem;
+}
+
+main {
+  width: 100vw;
+  max-width: 100%;
+  background: #eee9e9;
+  min-height: calc(100vh - 60px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header .nav-logo {
+  padding: 10px 20px;
+  display: block;
+  font-size: 1.3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(229, 22, 22);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+header .weather {
+  color: rgb(115, 115, 142);
+  padding: 10px 20px;
+  display: block;
+}
