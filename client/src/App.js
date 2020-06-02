@@ -14,7 +14,7 @@ export default function App() {
   const [authenticating, setAuthenticating] = useState(true);
 
   function initialIsAuthenticated() {
-    fetch("http://localhost:8080/api/users/is-authenticated/", {
+    fetch(`${window.location.href}/api/users/is-authenticated/`, {
       credentials: "include",
       headers: {
         Accept: "application/json",

@@ -12,7 +12,7 @@ export default function SignUp() {
 
   function createUser() {
     setError(null);
-    fetch("http://localhost:8080/api/users/", {
+    fetch(`${window.location.href}api/users/`, {
       method: "POST",
       credentials: "include",
       headers: {

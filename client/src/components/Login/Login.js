@@ -9,7 +9,7 @@ export default function Login({ setIsAuth }) {
   const [error, setError] = useState(null);
 
   function makeLogin() {
-    fetch("http://localhost:8080/api/users/login/", {
+    fetch(`${window.location.href}api/users/login/`, {
       method: "POST",
       credentials: "include",
       headers: {

@@ -21,7 +21,7 @@ export default function PasswordRecovery({ requestToken }) {
     const data = {
       email
     };
-    fetch("http://localhost:8080/api/users/recovery/request/", {
+    fetch(`${window.location.href}/api/users/recovery/request/`, {
       method: "POST",
       credentials: "include",
       headers: {
@@ -57,7 +57,7 @@ export default function PasswordRecovery({ requestToken }) {
       id: userId
     };
     console.log(data);
-    fetch("http://localhost:8080/api/users/recovery/", {
+    fetch(`${window.location.href}/api/users/recovery/`, {
       method: "POST",
       credentials: "include",
       headers: {
