@@ -16,7 +16,9 @@ export default function PostItem() {
 
   function fetchPost() {
     // Where we're fetching data from
-    fetch(`${window.location.href}api/posts/${id}`, { credentials: "include" })
+    fetch(`http://${window.location.hostname}/api/posts/${id}`, {
+      credentials: "include"
+    })
       // We get the API response and receive data in JSON format...
       .then(res => {
         if (!res.ok) {

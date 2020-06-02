@@ -10,7 +10,7 @@ export default function SinglePost() {
 
   function createNewPost() {
     // Update done status
-    fetch(`${window.location.href}api/posts/`, {
+    fetch(`http://${window.location.hostname}/api/posts/`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json"

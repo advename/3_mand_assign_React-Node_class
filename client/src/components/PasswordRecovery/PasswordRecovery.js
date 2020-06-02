@@ -21,7 +21,7 @@ export default function PasswordRecovery({ requestToken }) {
     const data = {
       email
     };
-    fetch(`${window.location.href}/api/users/recovery/request/`, {
+    fetch(`http://${window.location.hostname}/api/users/recovery/request/`, {
       method: "POST",
       credentials: "include",
       headers: {

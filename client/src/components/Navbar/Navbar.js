@@ -6,7 +6,7 @@ export default function Navbar({ isAuth, setIsAuth }) {
   const [isLoading, setIsLoading] = useState(true);
 
   function logout() {
-    fetch(`${window.location.href}/api/users/logout`, {
+    fetch(`http://${window.location.hostname}/api/users/logout`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json"
